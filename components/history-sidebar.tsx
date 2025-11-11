@@ -141,10 +141,7 @@ export default function HistorySidebar({ open, onClose, onSelect }: HistorySideb
                       <div className="w-full h-full" />
                     )}
                   </div>
-                  <div>
-                    <p className="text-white text-sm">{new Date(item.created_at).toLocaleString()}</p>
-                    <p className="text-white/60 text-xs truncate">{JSON.stringify(item.data)?.slice(0, 80)}</p>
-                  </div>
+                  <p className="text-white text-sm">{new Date(item.created_at).toLocaleString()}</p>
                 </div>
               </button>
               <button
